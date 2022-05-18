@@ -1,0 +1,21 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /SpringBootRepository
+
+spring:
+  main:
+    banner-mode: "off"
+  jpa:
+    database: h2
+    hibernate:
+      dialect: org.hibernate.dialect.H2Dialect
+      ddl-auto: create-drop
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+
+logging:
+  level:
+    org:
+      springframework: ERROR
